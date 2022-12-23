@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+<H1>Imagens Dinamicas</H1>
+    <P>Tente abrir esta imagem em outro tipos de dispositivos diferentes ou simplesmente em varios tamanhos de navegador.</P>
+
+    <picture> 
+        <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">
+
+        <source media="(min-width: 750px)" srcset="imagens/foto-m.png" type="image/png">
+        
+        <img src="Imagens/foto-p.png" alt="Imagens Flexivel">
+
+<h1>Reporduzindo Audios</h1>
+
+        <P>Vamos aprender a reproduzir audios em HTML5.</P>
+        <audio src="midia/guanacast-33.mp3" controls autoplay></audio>
+        <!-- mp3 wav ogg--> 
+
+    
+<h1> Modelo 2 </h1>
+        <audio preload="none"autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/happy-mistake.ogg" type="audio/ogg">
+        <source src="midia/happy-mistake.wav" type="audio/wav">
+        <a href="midia/happy-mistake.mp3">
+            <p>Infelizmente seu navegador não é compativel repordução de áudio.<a href="midia/happy-mistake.mp3"> Clique para baixar o arquivo MP3.</a> </p>    
+</audio>
+<p>Infelizmente seu navegador não é compativel repordução de áudio.<a href="midia/happy-mistake.mp3" download="midia/happy-mistake.mp3"> Clique para baixar o arquivo MP3.</a> </p>    
+
+    </picture>
+    
+</body>
+</html>
