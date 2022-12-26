@@ -6,15 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet icon" href="Nova pasta/jpg logo.ico">
     <title>Imagens Flexível</title>
+
 </head>
+
 <body>
-<h1>Imagens Flexível</h1>
+
+    <h1>Imagens Flexível</h1>
 
 <p>Você estavendo a imagen completa? Experimente ampliar o tamanho da janela para aproveitar a melhor expericia. </p>
 
-<p><img src="Nova pasta/shot_001.jpg" alt="Petter"></p>
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/paisagem-p.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/paisagem-m.png" type="image/png">
+    <img src="imagens/paisagem-g.png" alt="Imagens flexível">
+</picture>
 
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="Imagens flexível">
+</picture>
 
-    
 </body>
 </html>
